@@ -1,0 +1,30 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<title>JavaScript获取信息</title>
+	<meta http-equiv = "Content-Type" content = "text/html;charset=utf-8"/>
+	<script type = "text/javascript" src = "new_ajax.js"></script>
+	<script type = "text/javascript">
+		window.onload = function (){
+			var oBtn = document.getElementById("btn1");
+			var oUl = document.getElementById("ull");
+			oBtn.onclick = function (){
+				ajax("info.txt",function (content){
+					var arr = eval(content);
+					for(var i = 0;i < arr.length;i++){
+						var oLi = document.createElement("li");
+						oLi.innerHTML = '用户名：<strong>'+arr[i].user+'</strong>密码：<span>'+arr[i].pass+'</span>';
+						oUl.appendChild(oLi);
+					}
+				});
+			};
+		};
+	</script>
+</head>
+<body>
+	<input id = "btn1" type = "button" value = "获取"/>
+	<ul id = "ull">
+		
+	</ul>
+</body>
+</html>
