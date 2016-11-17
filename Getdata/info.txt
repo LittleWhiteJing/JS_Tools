@@ -1,1 +1,0 @@
-﻿[{user:'blue',pass:'123456'},{user:'zhangsan',pass:'123456'},{user:'lisi',pass:'123456'},{user:'wangwu',pass:'123456'},{user:'zhaoliu',pass:'123456'}]

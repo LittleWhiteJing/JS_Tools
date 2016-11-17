@@ -1,2 +1,5 @@
-# Ajax_Code
-Some applications which is based on ajax
+#JavaScript Functions 
+
+Funtions are  packaged by needs
+
+
